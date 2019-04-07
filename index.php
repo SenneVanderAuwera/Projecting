@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if($_SESSION['active'] == true) {
+   // header('Location: dashboard/dashboard.php');
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>

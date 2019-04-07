@@ -16,7 +16,6 @@ if($result = mysqli_query($con, $query)) {
 		$database_password = $row['password'];
 		
 		if($input_email == $database_email && $input_password == $database_password) {
-            $_SESSION['active'] = true;
 			header('Location: ../dashboard/dashboard.php');
 		} else {
 			header('Location: login.php?a=001');
