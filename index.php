@@ -2,7 +2,7 @@
 session_start();
 
 if($_SESSION['active'] == true) {
-   // header('Location: dashboard/dashboard.php');
+   header('Location: dashboard/dashboard.php');
 }
 
 ?>
